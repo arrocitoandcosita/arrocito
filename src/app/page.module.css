@@ -1,0 +1,58 @@
+
+
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 2rem 5rem 2rem;
+  max-height: 80vh;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.main span {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 50%;
+}
+
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 360px;
+  width: 100%;
+  height: calc((var(--card-height) + var(--card-top-offset)) * 2);
+  overflow-y: scroll; /* Habilitar el scroll vertical */
+}
+
+.card {
+  position: sticky;
+  top: 0;
+  height: var(--card-height);
+  padding-top: calc(var(--index) * var(--card-top-offset));
+  animation-name: scale;
+  animation-timeline: view(20% 40%); /* Asigna la animación a la línea de tiempo */
+  animation-range: cover 20% ;
+  --index0: calc(var(--index) - 1);
+  --reverse-index: calc(var(--numcards) - var(--index0));
+  --reverse-index0: calc(var(--reverse-index) - 1);
+}
+
+.card:last-child {
+  margin-bottom: 450px; /* Ajusta la separación de la última tarjeta del borde inferior */
+}
+
+
+@keyframes scale {
+  to {
+    transform: scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
+
+
+  }
+}

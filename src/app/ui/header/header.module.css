@@ -1,0 +1,21 @@
+.header {
+    padding: 2rem;
+    margin: 0;
+    text-align: end;
+    max-height: 20vh;
+
+}
+.header h1 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: right;
+}
+.header span {
+  font-size: 0.5rem;
+  color: rgb(255, 255, 255);
+  text-align: right;
+}
+
+  

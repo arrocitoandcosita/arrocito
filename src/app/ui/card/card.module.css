@@ -1,0 +1,54 @@
+.description {
+    position: relative;
+    box-sizing: border-box;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    font-size: 0.85rem;
+    max-width: var(--max-width);
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+    --start-range: calc(var(--index0) / var(--numcards) * 100%);
+	--end-range: calc((var(--index)) / var(--numcards) * 100%);
+
+	animation: linear scale forwards;
+	animation-timeline: --cards-element-scrolls-in-body;
+	animation-range: exit-crossing var(--start-range) exit-crossing var(--end-range);
+
+}
+.description h2 {
+    position: absolute;
+    margin: 0;
+    padding: 1rem;
+    right: 0;
+    top: 0;
+    font-size: 0.7rem;
+
+    max-width: 55%;
+
+  }
+
+.description img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: inset auto 0 0 0 linear-gradient(to bottom, transparent, rgba(var(--background-start-rgb), 0.9), rgba(var(--background-start-rgb), 1));
+
+}
+
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .description div {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        align-items: flex-end;
+        pointer-events: none;
+        inset: auto 0 0;
+        padding: 2rem;
+    }
+}
