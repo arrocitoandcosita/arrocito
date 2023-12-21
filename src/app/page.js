@@ -10,7 +10,7 @@ export default function Home() {
       <main className={styles.main}>
         <ul className={styles.cards}>
           <li className={styles.card}  style={{ '--index': 1 }} >
-            <Card urlImage = {"https://lh3.googleusercontent.com/drive-viewer/AEYmBYSY63IPrhLyOAzaGFzPK_VqRYFJtZraz6gSnbaioWRHPt6T0AAWiYWwxtso-fIk-A_0dkG9Xgk6Rz06Pogr5McaW15iyA=s1600"}
+            <Card urlImage = {"https://drive.google.com/uc?export=download&id=1XnjcPIFTgqCtEmLa-XWplCr4xTARUw0s"}
             backgroundColor ="rgb(36,42,59)"
             texColor = "rgb(255, 255, 255)"
             index = {1}
@@ -36,18 +36,24 @@ export default function Home() {
           </li>
           <li className={styles.card}  style={{ '--index': 3 }} >
             <Card 
-              urlImage = {null}
-              backgroundColor="white"
-              texColor = "rgb(40, 38, 38)"
-              text={'Espero ancioso por ver nuestro tercer encuentro y conocer mas de lo que te gusta'}
+              urlImage = {"https://drive.google.com/uc?export=download&id=10U4vONzAfS_Ml1aezJMgLXToPRwNzhgA"}
+              backgroundColor=""
+              texColor = "rgb(255, 255, 255)"
+              backgroundColorText={false}
+              rigth = {true}
+              top = {true}
+              left = {false}
+              bottom = {false}
+              text={'Por si aún te quedan dudas. Viajo todos los días largas distancias en mis recuerdos, en el camino contempló cada detalle de tu delicado gesto, la profundidad de tus ojos, la elocuencia de tu cuerpo y cada palabra que susurran tus labios, en cada viaje veo un camino más hermoso y único que va sembrando el anhelo de volverte a ver.'}
               index = {3}
             ></Card>
           </li>
           <li className={styles.card}  style={{ '--index': 4 }} >
             <Card 
-              urlImage = {null}
-              backgroundColor="transparent"
-              texColor = "transparent"
+                urlImage = {null}
+                backgroundColor="white"
+                texColor = "rgb(40, 38, 38)"
+                text={'Espero ansioso por ver nuestro cuarto encuentro y conocer más de esos complejos hermosos que tienes'}
               index = {4}
             ></Card>
           </li>

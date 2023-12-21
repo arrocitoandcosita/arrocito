@@ -10,7 +10,7 @@ export default function Header(){
                     disableTypography
                     inset
                     primary={<Typography variant="h1" >ARROCITO</Typography>}
-                    secondary={<Typography variant="span" >Para Daniela de alguien que la aprecia</Typography>}
+                    secondary={<Typography variant="span" >Daniela te <strong>QUIERO MUCHO </strong> sin importar el corto tiempo</Typography>}
                 />
             </div>
         
