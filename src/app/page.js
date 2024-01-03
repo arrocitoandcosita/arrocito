@@ -13,8 +13,8 @@ export default function Home() {
             <Card urlImage = {"https://drive.google.com/uc?export=download&id=1XnjcPIFTgqCtEmLa-XWplCr4xTARUw0s"}
             backgroundColor ="rgb(36,42,59)"
             texColor = "rgb(255, 255, 255)"
-            index = {1}
-            rigth = {true}
+            backgroundColorText={false}
+            right = {true}
             top = {true}
             left = {false}
             bottom = {false}
@@ -37,31 +37,40 @@ export default function Home() {
           <li className={styles.card}  style={{ '--index': 3 }} >
             <Card 
               urlImage = {"https://drive.google.com/uc?export=download&id=10U4vONzAfS_Ml1aezJMgLXToPRwNzhgA"}
-              backgroundColor=""
-              texColor = "rgb(255, 255, 255)"
-              backgroundColorText={false}
-              rigth = {true}
+              backgroundColor ="rgb(36,42,59)"
+              texColor = "rgb(36,42,59)"
+              backgroundColorText={true}
+              right = {true}
               top = {true}
               left = {false}
               bottom = {false}
+              width ={null}
               text={'Por si aún te quedan dudas. Viajo todos los días largas distancias en mis recuerdos, en el camino contempló cada detalle de tu delicado gesto, la profundidad de tus ojos, la elocuencia de tu cuerpo y cada palabra que susurran tus labios, en cada viaje veo un camino más hermoso y único que va sembrando el anhelo de volverte a ver.'}
               index = {3}
             ></Card>
           </li>
           <li className={styles.card}  style={{ '--index': 4 }} >
             <Card 
-                urlImage = {null}
-                backgroundColor="white"
+                urlImage = {'https://as2.ftcdn.net/v2/jpg/02/27/33/07/1000_F_227330760_zw3RB2cCYhtlIms4JX19FkgFrHM3CXa1.jpg'}
+                backgroundColor=""
                 texColor = "rgb(40, 38, 38)"
-                text={'Espero ansioso por ver nuestro cuarto encuentro y conocer más de esos complejos hermosos que tienes'}
-              index = {4}
+                backgroundColorText={true}
+                rigth = {false}
+                top = {false}
+                left = {true}
+                bottom = {true}
+                width ={"50%"}
+                text={'Tu mirada es magia inconsciente, tu tacto doblega mi ser y tu presencia intimida todas las barreras que durante años fabriqué. Merodeas en lo profundo de mi alma, encontrando una sinceridad que solo florece en los nocturnos cielos llenos de soledad. No comprendo el hechizo de tus ojos, pero creo que me doy por vencido y te ofrezco : pasión, deseo, cuerpo, mente y sentimientos'}
+                index = {4}
             ></Card>
           </li>
           <li className={styles.card}  style={{ '--index': 5 }} >
             <Card 
-              urlImage={null}
-              backgroundColor="transparent"
-              texColor="transparent"
+              urlImage = {null}
+              backgroundColor="white"
+              texColor = "rgb(40, 38, 38)"
+              text={'Espero ansioso por ver nuestro quinto encuentro y saber mas de ti que de mi, seras mi centro de atención'}
+
               index = {5}
             ></Card>
           </li>
